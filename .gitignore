@@ -1,2 +1,5 @@
 #ignore scss files
 Scss/
+
+#igonre css map
+Css/styles.css.map
