@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,600&display=swap");
+.container {
+  text-align: center;
+}
+.container h1 {
+  font-size: 5rem;
+  color: #2c3e50;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 1rem;
+}
+.container button {
+  font-size: 2rem;
+  border: none;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.container .info {
+  font-size: 1.7rem;
+}
+
+.wrapper {
+  margin-top: 3rem;
+  width: 38rem;
+  height: 38rem;
+  background-color: #2c3e50;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in;
+}
+.wrapper .color {
+  width: 15rem;
+  height: 15rem;
+  position: absolute;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+.wrapper .red {
+  background: #e74c3c;
+  border-radius: 15rem 0 0 0;
+  top: 7%;
+  left: 8%;
+}
+.wrapper .green {
+  background: #2ecc71;
+  border-radius: 0 15rem 0 0;
+  top: 7%;
+  right: 8%;
+}
+.wrapper .blue {
+  background: #3498db;
+  border-radius: 0 0 0 15rem;
+  left: 8%;
+  top: 53%;
+}
+.wrapper .yellow {
+  background: #f1c40f;
+  border-radius: 0 0 15rem 0;
+  right: 8%;
+  top: 53%;
+}
+.wrapper::before {
+  content: "";
+  z-index: 1;
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  background: #2c3e50;
+  border: 20px solid rgba(44, 62, 80, 0.1);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrapper .msg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  font-size: 1.5rem;
+  width: 8rem;
+  height: 6rem;
+  display: grid;
+  place-items: center;
+}
+
+.unclickable {
+  pointer-events: none;
+}
+
+footer {
+  font-size: 2rem;
+  margin-top: 45rem;
+}
+footer p {
+  color: rgba(44, 62, 80, 0.5);
+}
+footer p span {
+  color: #2c3e50;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-color: #dff9fb;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+.pressed {
+  background: #ecf0f1;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.red:active,
+.red.activated {
+  box-shadow: 0 0 0 1px #ff5c36 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
+  background-color: #c4a59e;
+  transform: translateY(1.5px);
+}
+
+.green:active,
+.green.activated {
+  box-shadow: 0 0 0 1px #a0ea00 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
+  background-color: #9da788;
+  transform: translateY(1.5px);
+}
+
+.yellow:active,
+.yellow.activated {
+  box-shadow: 0 0 0 1px #ffca3d inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
+  background-color: #b6a780;
+  transform: translateY(1.5px);
+}
+
+.blue:active,
+.blue.activated {
+  box-shadow: 0 0 0 1px #2bbcff inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
+  background-color: #718a96;
+  transform: translateY(1.5px);
+}
+
+#running {
+  color: rgb(0, 99, 0);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
