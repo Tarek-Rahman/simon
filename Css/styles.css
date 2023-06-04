@@ -89,6 +89,7 @@
   height: 6rem;
   display: grid;
   place-items: center;
+  color: #fff;
 }
 
 .unclickable {
